@@ -35,6 +35,7 @@ def simple_2(n):
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 '''
 
+
 #cProfile.run('simple_2(1000)')
 
 '''
