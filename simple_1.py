@@ -27,6 +27,7 @@ def simple_1(n):
 #python -m timeit -n 100 -s "import simple_1" "simple_1.simple_1(111)"100 loops, best of 3: 26.9 usec per loop
 #python -m timeit -n 100 -s "import simple_1" "simple_1.simple_1(1111)"100 loops, best of 3: 332 usec per loop
 
+
 #cProfile.run('simple_1(10000)')
 
 '''
