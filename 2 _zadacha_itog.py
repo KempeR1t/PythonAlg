@@ -27,6 +27,35 @@ def simple_1(n):
 #simple_1(111)" - 100 loops, best of 3: 26.9 usec per loop
 #simple_1(1111)" - 100 loops, best of 3: 332 usec per loop
 
+#cProfile.run('simple_1(10000)')
+
+'''
+         1233 function calls in 0.004 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.004    0.004 <string>:1(<module>)
+        1    0.004    0.004    0.004    0.004 simple_1.py:3(simple_1)
+        1    0.000    0.000    0.004    0.004 {built-in method builtins.exec}
+     1229    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+'''
+
+#cProfile.run('simple_1(1000)')
+
+'''
+         172 function calls in 0.000 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 simple_1.py:3(simple_1)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
+      168    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+'''
 
 
 #нахождение n-ого простого числа
