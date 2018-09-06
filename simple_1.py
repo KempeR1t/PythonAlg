@@ -43,4 +43,17 @@ def simple_1(n):
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 '''
 
-cProfile.run('simple_1(1000)')
+#cProfile.run('simple_1(1000)')
+
+'''
+         172 function calls in 0.000 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 simple_1.py:3(simple_1)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
+      168    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+'''
